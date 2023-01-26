@@ -2,7 +2,13 @@
 {
     static void Main(string[] args)
     {
+        int[] test = {9,7,1,2,3};
+        int[] pain = WriteReverse(test);
 
+        foreach (int p in pain)
+        {
+         Console.Write(p + " ");
+        }
     }
 
     public static double Average(double [] nums)
@@ -110,10 +116,10 @@
 
         return sum;
     }
-////////////////////////////////////////////  
+////////////////////////////////////////////
     public static int Product(int[]nums)
     {
-        int product = 0;
+        int product = 1;
 
         foreach (var n in nums)
         {
@@ -125,7 +131,7 @@
 
     public static double Product(double[]nums)
     {
-        double product = 0;
+        double product = 1;
 
         foreach (var n in nums)
         {
@@ -135,19 +141,114 @@
         return product;
     }
 ////////////////////////////////////////////
-    public static int SortAscending(int[] nums)
+    public static int[] SortAscending(int[] nums)
+    { 
+        int temp;
+
+        for (int j = 0; j <= nums.Length - 2; j++) 
+        {
+            for (int i = 0; i <= nums.Length - 2; i++) 
+            {
+               if (nums[i] > nums[i + 1]) 
+               {
+                    temp = nums[i + 1];
+                    nums[i + 1] = nums[i];
+                    nums[i] = temp;
+               }
+            }
+         }
+
+         return nums;
+    }
+
+    public static double[] SortAscending(double[] nums)
+    { 
+        double temp;
+
+        for (int j = 0; j <= nums.Length - 2; j++) 
+        {
+            for (int i = 0; i <= nums.Length - 2; i++) 
+            {
+               if (nums[i] > nums[i + 1]) 
+               {
+                    temp = nums[i + 1];
+                    nums[i + 1] = nums[i];
+                    nums[i] = temp;
+               }
+            }
+         }
+
+         return nums;
+    }
+////////////////////////////////////////////
+    public static int[] SortDescending(int[] nums)
+    { 
+        int temp;
+
+        for (int j = 0; j <= nums.Length - 2; j++) 
+        {
+            for (int i = 0; i <= nums.Length - 2; i++) 
+            {
+               if (nums[i] < nums[i + 1]) 
+               {
+                    temp = nums[i + 1];
+                    nums[i + 1] = nums[i];
+                    nums[i] = temp;
+               }
+            }
+         }
+
+         return nums;
+    }
+
+    public static double[] SortDescending(double[] nums)
+    { 
+        double temp;
+
+        for (int j = 0; j <= nums.Length - 2; j++) 
+        {
+            for (int i = 0; i <= nums.Length - 2; i++) 
+            {
+               if (nums[i] < nums[i + 1]) 
+               {
+                    temp = nums[i + 1];
+                    nums[i + 1] = nums[i];
+                    nums[i] = temp;
+               }
+            }
+         }
+
+         return nums;
+    }
+////////////////////////////////////////////
+    public static int[] WriteReverse(int[] nums)
     {
-        int x = ;
-        int numsLength = nums.Length;
-        int[] sortedArray = new int[nums.Length];
-        int min = nums[0];
-        
-        foreach(var n in nums){
-            if( min > n )
-                min = n;
-        sortedArray[nums.Length]
+        int[] reversedArray = new int[nums.Length];
+        int nums1 = 0;
+
+        for (int i = nums.Length - 1; i >= 0 ; i--)
+        {
+           reversedArray[nums1] = nums[i];
+
+            nums1++;
         }
 
-        Console.WriteLine(sortedArray);
+        return reversedArray;
     }
+
+    public static double[] WriteReverse(double[] nums)
+    {
+        double[] reversedArray = new double[nums.Length];
+        int nums1 = 0;
+
+        for (int i = nums.Length - 1; i >= 0 ; i--)
+        {
+           reversedArray[nums1] = nums[i];
+
+            nums1++;
+        }
+
+        return reversedArray;
+    }
+////////////////////////////////////////////
 }
