@@ -1,9 +1,10 @@
-﻿public static class Array
+﻿using System;
+public static class Array
 {
     static void Main(string[] args)
     {
         int[] test = {9,7,1,2,3};
-        int[] pain = WriteReverse(test);
+        int[] pain = Resize(test, 19);
 
         foreach (int p in pain)
         {
@@ -251,4 +252,42 @@
         return reversedArray;
     }
 ////////////////////////////////////////////
+    public static int[] Clear(int[] nums, int index, int length)
+    {
+        for (int i = index; i <= length - 1; i++)
+        {
+            nums[i] = 0;
+        }
+
+        return nums;
+    }
+
+    public static double[] Clear(double[] nums, int index, int length)
+    {
+        for (int i = index; i <= length - 1; i++)
+        {
+            nums[i] = 0;
+        }
+
+        return nums;
+    }
+
+    public static int[] Resize(int [] array, int newSize)
+    {
+        int[] resizedArray = new int[newSize];
+
+        for (int i = 0; i < newSize; i++)
+        {
+
+            if(i > array.Length - 1)
+            {
+                resizedArray[i] = 0;
+            }
+            else
+            {
+                resizedArray[i] = array[i];
+            }
+        }
+        return resizedArray;
+    }
 }
