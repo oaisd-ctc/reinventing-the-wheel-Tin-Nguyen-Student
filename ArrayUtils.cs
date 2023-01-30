@@ -3,13 +3,15 @@ public static class Array
 {
     static void Main(string[] args)
     {
-        int[] test = {9,7,1,2,3};
-        int[] pain = Resize(test, 19);
+        int[] test = {5,9,10,36,82,37};
+        int[] test2 = {100,90,80,70,60,50,40,30,20,11};
+        int pain2 = Average(test);
 
-        foreach (int p in pain)
-        {
-         Console.Write(p + " ");
-        }
+        Console.WriteLine(pain2);
+        //foreach (int p in pain)
+        //{
+        // Console.Write(p + " ");
+       // }
     }
 
     public static double Average(double [] nums)
@@ -271,7 +273,7 @@ public static class Array
 
         return nums;
     }
-
+////////////////////////////////////////////
     public static int[] Resize(int [] array, int newSize)
     {
         int[] resizedArray = new int[newSize];
@@ -289,5 +291,34 @@ public static class Array
             }
         }
         return resizedArray;
+    }
+
+    public static double[] Resize(double [] array, int newSize)
+    {
+        double[] resizedArray = new double[newSize];
+
+        for (int i = 0; i < newSize; i++)
+        {
+
+            if(i > array.Length - 1)
+            {
+                resizedArray[i] = 0;
+            }
+            else
+            {
+                resizedArray[i] = array[i];
+            }
+        }
+        return resizedArray;
+    }
+////////////////////////////////////////////
+    public static int[] Copy(int[] nums, int[] copiedArray, int length)
+    {
+        for (int i = 0; i <= length - 1; i++)
+        {
+            copiedArray[i] = nums[i];
+        }
+
+        return copiedArray;
     }
 }
