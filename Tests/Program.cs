@@ -1,4 +1,5 @@
 ﻿using Xunit;
+using MyUtilities;
 
 
 public class Tests
@@ -8,6 +9,7 @@ public class Tests
 
     public void TestingHere()
     {
+
         Assert.Equal(4, MathUtils.Power(2, 2));
     }
 }
