@@ -7,6 +7,7 @@ public class Math
 
         public static void MathUtils(string[] args)
         {
+                
                 MathUtils.Power(2,2);
         }
         
@@ -23,22 +24,49 @@ public class Math
         }
         public static double SquareRoot(int x)
         {
-                foreach (int i in x)
+                int i = 0;
+                double root = 1;
+                while(true)
                 {
-                      int answer =  Math.SquareRoot(x);
-                      Console.WriteLine(answer);
-                      return;
+                        i = i + 1;
+                        root = (number / root + root) / 2;
+                        if(i == number + 1) {break;}
+                }
+        }
+        public static float SquareRoot(int x)
+        {
+                int i = 0;
+                float root = 1;
+                while(true)
+                {
+                        i = i + 1;
+                        root = (number / root + root) / 2;
+                        if(i == number + 1) {break;}
+                }
+        }
+        public static decimal SquareRoot(int x)
+         {
+                int i = 0;
+                decimal root = 1;
+                while(true)
+                {
+                        i = i + 1;
+                        root = (number / root + root) / 2;
+                        if(i == number + 1) {break;}
                 }
         }
         
-         public static void AbsoluteValue(int x)
+         public static int AbsoluteValue(int x)
         {
-                foreach (int i in x)
-                {
-                      int answer = Math.AbsoluteValue(x);
-                      Console.WriteLine(answer);
-                      return;
-                }
+                return x * ((v>0)) - ((v<0));
+        }
+        public static double AbsoluteValue(int x)
+        {
+                return x * ((v>0)) - ((v<0));
+        }
+        public static float AbsoluteValue(int x)
+        {
+                return x * ((v>0)) - ((v<0));
         }
          public static bool Min(int x, int y)
         {
@@ -80,49 +108,113 @@ public class Math
                         return;
                 }
         }
-         public static void Add(int x, int y)
+         public static int Add(int x, int y)
         {
                 foreach (int i in x)
                 {
-                      int answer = x + y;
-                      Console.Writeline(answer);
-                      return;
+                      int result = x + y;
+                      return result;
+                }
+                
+        }
+         public static double Add(double x, double y)
+        {
+                foreach (double i in x)
+                {
+                      double result = x + y;
+                      return result;
+                }
+                
+        }
+         public static float Add(float x, float y)
+        {
+                foreach (float i in x)
+                {
+                      float result = x + y;
+                      return result;
                 }
                 
         }
 
-         public static void Subtract(int x, int y)
+         public static int Subtract(int x, int y)
         {
                 foreach (int i in x)
                 {
-                        int answer= x - y;
-                        Console.WriteLine(answer);
-                        return;
+                        int result = x - y;
+                        return result;
+                }
+        }
+         public static double Subtract(double x, double y)
+        {
+                foreach (double i in x)
+                {
+                        double result = x - y;
+                        return result;
                 }
         }
 
-         public static void Divide(int x, int y)
+         public static float Subtract(float x, float y)
+        {
+                foreach (float i in x)
+                {
+                        float result = x - y;
+                        return result;
+                }
+        }
+
+         public static int Divide(int x, int y)
         {
                 foreach (int i in x)
                 {
                         int answer = x / y;
-                        Console.WriteLine(answer);
-                        return;
+                        return result;
+                }
+        }
+         public static double Divide(double x, double y)
+        {
+                foreach (double i in x)
+                {
+                        double answer = x / y;
+                        return result;
+                }
+        }
+         public static float Divide(float x, float y)
+        {
+                foreach (float i in x)
+                {
+                        float answer = x / y;
+                        return result;
                 }
         }
 
-         public static void Multiply(int x, int y)
+         public static int Multiply(int x, int y)
         {
                 foreach (int i in x)
                 {
-                        int answer = x * y;
-                        Console.Writeline(answer);
-                        return;
+                        int result = x * y;
+                        return result;
+                }
+        }
+         public static double Multiply(double x, double y)
+        {
+                foreach (double i in x)
+                {
+                        double result = x * y;
+                        return result;
+                }
+        }
+         public static float Multiply(float x, float y)
+        {
+                foreach (float i in x)
+                {
+                        float result = x * y;
+                        return result;
                 }
         }
 
          public static double Log(int x)
         {
+                
                 double answer = Math.Log();
                 Console.WriteLine(answer);
                 return;
