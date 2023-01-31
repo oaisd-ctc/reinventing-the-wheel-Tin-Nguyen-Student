@@ -1,5 +1,8 @@
 ﻿using System;
-public static class Array
+
+namespace Utility
+{
+public class ArrayUtils
 {
     static void Main(string[] args)
     {
@@ -313,12 +316,13 @@ public static class Array
     }
 ////////////////////////////////////////////
     public static int[] Copy(int[] nums, int[] copiedArray, int length)
-    {
-        for (int i = 0; i <= length - 1; i++)
         {
-            copiedArray[i] = nums[i];
-        }
+        for (int i = 0; i <= length - 1; i++)
+            {
+                copiedArray[i] = nums[i];
+            }
 
         return copiedArray;
+        }
     }
 }
