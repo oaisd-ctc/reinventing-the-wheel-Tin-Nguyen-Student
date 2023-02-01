@@ -1,47 +1,77 @@
-﻿public class String
+﻿public class StringUtils
 {
     static void Main(string[] args)
     {
-        Console.WriteLine(ToUpper());
+      string testString = "hello";
+      string upperTestString = StringUtils.ToUpper("hello");
+
+      // upperTestString should be "HELLO"
     }
-    public string ToUpper()
+
+    /// <summary>
+    /// This method will take in 1 string as a parameter and return a string in the argument's uppercase form. 
+    /// <param name="s"> The string you want to turn uppercase</param>
+    /// </summary>
+    public static string ToUpper(string s)
     {
-        string upperstr1 = "testing";
-        string testing = upperstr1.ToUpper();
-        return testing;
+        return s.ToUpper();
     }
-
-    public static string ToLower()
+    /// <summary>
+    /// This method will take in 1 string as a parameter and return a string in the arguments lowercase form.
+    /// <param name="s"> The string you want to turn lowercase</param>
+    /// </summary>
+    public static string ToLower(string TL)
     {
-        str.ToLower () 
+        
     }
 
+    /// <summary>
+    /// This method will take in 1 string as a parameter and return a number that represents the amount of characters in the string parameter
+    /// <param name="L"> The string you want to tell you the length of your input</param>
+    /// </summary>
+    public static int Length(string L)
+    {
+        int incomingStringLength = 0;
 
-    public static string Length
+        for(int i = 0; i < L.Length; i++){
+            incomingStringLength++;
+        }
+
+        return incomingStringLength;
+    }
+
+    /// <summary>
+    /// This method will take in 1 string as a parameter and return a string in the argument's uppercase form. 
+    /// <param name="s"> The string you want to turn uppercase</param>
+    /// </summary>
+    public static string Reverse(string R)
     {
 
     }
 
-
-    public static string Reverse
+    /// <summary>
+    /// This method will take in 1 string as a parameter and return a string in the argument's uppercase form. 
+    /// <param name="s"> The string you want to turn uppercase</param>
+    /// </summary>
+    public static int CountVowels(string CV)
     {
 
     }
 
-
-    public static string CountVowels
+    /// <summary>
+    /// This method will take in 1 string as a parameter and return a string in the argument's uppercase form. 
+    /// <param name="s"> The string you want to turn uppercase</param>
+    /// </summary>
+    public static int CountConsonants(string CC)
     {
 
     }
 
-
-    public static string CountConsonants
-    {
-
-    }
-
-
-    public static string HasLetter
+    /// <summary>
+    /// This method will take in 1 string as a parameter and return a string in the argument's uppercase form. 
+    /// <param name="s"> The string you want to turn uppercase</param>
+    /// </summary>
+    public static bool HasLetter(string HL, char I)
     {
 
     }
