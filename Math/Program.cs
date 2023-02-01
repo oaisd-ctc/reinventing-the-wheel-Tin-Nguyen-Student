@@ -8,18 +8,69 @@ public class Math
         public static void MathUtils(string[] args)
         {
                 
-                MathUtils.Power(2,2);
         }
-        
+        ///<summary>
+        ///Takes a number (x) and then multiplies it by the power (y)
+        ///</summary>
+        ///<param name = "x">The Base Number.</param>
+        ///<param name = "y">The power of the base number.</param>
+        ///<returns>
+        ///Gives product between the base number (x) and the power (y),
+        ///</returns>
+
+         public static int Power(int x, int y)
+        {
+                
+                
+                {
+                        int power = 1;
+                        for(i = 1; 1 <= y; ++i)
+                        {
+                                power = power * x;
+                        }
+                        return power;
+                }
+        }
+        ///<summary>
+        ///Takes a number (x) and then multiplies it by the power (y)
+        ///</summary>
+        ///<param name = "x">The Base Number.</param>
+        ///<param name = "y">The power of the base number.</param>
+        ///<returns>
+        ///Gives product between the base number (x) and the power (y),
+        ///</returns>
          public static double Power(double x, double y)
         {
                 
-                for (int x = 0; x <= 50; x++)
+        
                 {
-                        int answer = MathUtils.Power(x, y);
-                        Console.WriteLine(answer);
-                        return;
-                        
+                        double power = 1;
+                        for(i = 1; 1 <= y; ++i)
+                        {
+                                power = power * x;
+                        }
+                        return power;
+                }
+        }
+        ///<summary>
+        ///Takes a number (x) and then multiplies it by the power (y)
+        ///</summary>
+        ///<param name = "x">The Base Number.</param>
+        ///<param name = "y">The power of the base number.</param>
+        ///<returns>
+        ///Gives product between the base number (x) and the power (y),
+        ///</returns>
+         public static float Power(float x, float y)
+        {
+                
+                
+                {
+                        float power = 1;
+                        for(i = 1; 1 <= y; ++i)
+                        {
+                                power = power * x;
+                        }
+                        return power;
                 }
         }
         public static double SquareRoot(int x)
@@ -31,6 +82,7 @@ public class Math
                         i = i + 1;
                         root = (number / root + root) / 2;
                         if(i == number + 1) {break;}
+                        return root;
                 }
         }
         public static float SquareRoot(int x)
@@ -42,6 +94,7 @@ public class Math
                         i = i + 1;
                         root = (number / root + root) / 2;
                         if(i == number + 1) {break;}
+                        return root;
                 }
         }
         public static decimal SquareRoot(int x)
@@ -53,7 +106,9 @@ public class Math
                         i = i + 1;
                         root = (number / root + root) / 2;
                         if(i == number + 1) {break;}
+                        return root;
                 }
+
         }
         
          public static int AbsoluteValue(int x)
@@ -68,49 +123,111 @@ public class Math
         {
                 return x * ((v>0)) - ((v<0));
         }
-         public static bool Min(int x, int y)
+         public static bool Min(float x, float y)
         {
-                foreach (int n in nums)
                 {
                         if (x < y)
                         {
-                                Console.WriteLine(x);
-                                return;
+                                
+                                return x;
                         }
                         else if (x == y)
                         {
-                                Console.WriteLine("The are the same values");
-                                return;
+                                
+                                return x;
                         }
                         else
                         {
-                                Console.WriteLine(y);
-                                return;
+                                
+                                return y;
+                        }
+                }
+        }
+        public static bool Min(int x, int y)
+        {
+                {
+                        if (x < y)
+                        {
+                                return x;
+                                
+                        }
+                        else if (x == y)
+                        {
+                                return x;
+                                
+                        }
+                        else
+                        {
+                                
+                                return y;
+                        }
+                }
+        }
+        public static bool Min(double x, double y)
+        {
+                {
+                        if (x < y)
+                        {
+                                return x;
+                        }
+                        else if (x == y)
+                        {
+                                return x;
+                        }
+                        else
+                        {
+                                return y;
                         }
                 }
         }
          public static  bool Max(int x, int y)
         {
-                foreach (int n in nums);
                 if (x > y)
                 {
-                        Console.WriteLine(x);
-                        return;
+                        return x;
                 }
                 else if (x == y)
                 {
-                        Console.WriteLine(y);
-                return;
+                        return;
                 }
                 else 
                 {
-                        Console.WriteLine(y);
+                        return y;
+                }
+        }
+        public static  bool Max(float x, float y)
+        {
+                if (x > y)
+                {
+                        return x;
+                }
+                else if (x == y)
+                {
                         return;
+                }
+                else 
+                {
+                        return y;
+                }
+        }
+        public static  bool Max(double x, double y)
+        {
+                if (x > y)
+                {
+                        return x;
+                }
+                else if (x == y)
+                {
+                        return;
+                }
+                else 
+                {
+                        return y;
                 }
         }
          public static int Add(int x, int y)
         {
-                foreach (int i in x)
+                
                 {
                       int result = x + y;
                       return result;
@@ -119,7 +236,7 @@ public class Math
         }
          public static double Add(double x, double y)
         {
-                foreach (double i in x)
+                
                 {
                       double result = x + y;
                       return result;
@@ -128,7 +245,7 @@ public class Math
         }
          public static float Add(float x, float y)
         {
-                foreach (float i in x)
+                
                 {
                       float result = x + y;
                       return result;
@@ -138,7 +255,7 @@ public class Math
 
          public static int Subtract(int x, int y)
         {
-                foreach (int i in x)
+                
                 {
                         int result = x - y;
                         return result;
@@ -146,7 +263,7 @@ public class Math
         }
          public static double Subtract(double x, double y)
         {
-                foreach (double i in x)
+                
                 {
                         double result = x - y;
                         return result;
@@ -155,7 +272,7 @@ public class Math
 
          public static float Subtract(float x, float y)
         {
-                foreach (float i in x)
+                
                 {
                         float result = x - y;
                         return result;
@@ -164,7 +281,7 @@ public class Math
 
          public static int Divide(int x, int y)
         {
-                foreach (int i in x)
+                
                 {
                         int answer = x / y;
                         return result;
@@ -172,7 +289,7 @@ public class Math
         }
          public static double Divide(double x, double y)
         {
-                foreach (double i in x)
+                
                 {
                         double answer = x / y;
                         return result;
@@ -180,7 +297,7 @@ public class Math
         }
          public static float Divide(float x, float y)
         {
-                foreach (float i in x)
+                
                 {
                         float answer = x / y;
                         return result;
@@ -189,7 +306,7 @@ public class Math
 
          public static int Multiply(int x, int y)
         {
-                foreach (int i in x)
+                
                 {
                         int result = x * y;
                         return result;
@@ -197,7 +314,7 @@ public class Math
         }
          public static double Multiply(double x, double y)
         {
-                foreach (double i in x)
+                
                 {
                         double result = x * y;
                         return result;
@@ -205,41 +322,148 @@ public class Math
         }
          public static float Multiply(float x, float y)
         {
-                foreach (float i in x)
+                
                 {
                         float result = x * y;
                         return result;
                 }
         }
 
-         public static double Log(int x)
+         public static double Log(double x)
         {
+                double log = 25;
+                while (log => 0)
+                {
+                        double num = (1 << log);
+                        if ((num & x) != 0)
+                        return (double) log;
+                        log --;
+
+                }
+                return -1;
+        }
+         public static int Log(int x)
+        {
+                 int log = 25;
+                while (log => 0)
+                {
+                        int num = (1 << log);
+                        if ((num & x) != 0)
+                        return (int) log;
+                        log --;
+
+                }
+                return -1;
+        }
+         public static decimal Log(decimal x)
+        {
+                 decimal log = 25;
+                while (log => 0)
+                {
+                        decimal num = (1 << log);
+                        if ((num & x) != 0)
+                        return (decimal) log;
+                        log --;
+
+                }
+                return -1;
+        }
+
+         public static double Exp(double x, double y)
+        {
+                double i =  2.71828;
+                for(i = 1; 1 <= y; ++i)
+                {
+                i = i * y;
+                }
+                return i;
                 
-                double answer = Math.Log();
-                Console.WriteLine(answer);
-                return;
+        }
+        public static decimal Exp(decimal x, decimal y)
+        {
+                decimal i =  2.71828;
+                for(i = 1; 1 <= y; ++i)
+                {
+                i = i * y;
+                }
+                return i;
+                
+        }
+        public static float Exp(float x, float y)
+        {
+                float i =  2.71828;
+                for(i = 1; 1 <= y; ++i)
+                {
+                i = i * y;
+                }
+                return i;
+                
+        }
+         public static double Ceiling(double x, double y)
+        {
+                double a = 3;
+                double b = 4; num = 0;
+                if ((a % b) != 0)
+                {
+                        num = (a / b) + (a % b);
+                        return num;
+                }
+                else
+                {
+                        num = (a / b);
+                        return num;
+                }
+        }
+        public static decimal Ceiling(decimal x, decimal y)
+        {
+                decimal a = 3;
+                decimal b = 4; num = 0;
+                if ((a % b) != 0)
+                {
+                        num = (a / b) + (a % b);
+                        return num;
+                }
+                else
+                {
+                        num = (a / b);
+                        return num;
+                }
+        }
+        public static float Ceiling(float x, float y)
+        {
+                float a = 3;
+                float b = 4; num = 0;
+                if ((a % b) != 0)
+                {
+                        num = (a / b) + (a % b);
+                        return num;
+                }
+                else
+                {
+                        num = (a / b);
+                        return num;
+                }
         }
 
-         public static int Exponent(int x, int y)
+         public static double Round(double x)
         {
-                int answer = Math.Exponent(x, y);
-                Console.WriteLine(answer);
-                return;
+                double a = 2.5;
+                sum = (double) (a + 0.5);
+                return sum;
         }
-
-         public static double Remainder(int x, int y)
+        
+         public static decimal Round(decimal x)
         {
-                double answer = x / y;
-                double remainder = Math.Remainder(answer);
-                Console.WriteLine(remainder);
-                return;
+                decimal a = 2.5;
+                sum = (decimal) (a + 0.5);
+                return sum;
         }
-
-         public static double Round(int x)
+        
+         public static float Round(float x)
         {
-                double answer = Math.Round(x);
-                Console.Writeline(answer);
-                return;
+                float a = 2.5;
+                sum = (float) (a + 0.5);
+                return sum;
         }
     }
 }
