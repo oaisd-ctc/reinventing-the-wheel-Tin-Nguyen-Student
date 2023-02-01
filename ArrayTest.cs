@@ -3,6 +3,9 @@ using Utility;
 
 public class Tests
 {
+
+    /// <summary>
+    ///
     [Fact]
     public void AverageTest()
     {
@@ -49,5 +52,46 @@ public class Tests
         int[] testArray = {9,5,10,17,21,8};
         int desiredOutcome = 70;
         Assert.Equal(desiredOutcome, ArrayUtils.Sum(testArray));
+    }
+
+    [Fact]
+    public void ProductTest()
+    {
+        int[] testArray = {9,5,10,17,21,8};
+        int desiredOutcome = 1285200;
+        Assert.Equal(desiredOutcome, ArrayUtils.Product(testArray));
+    }
+
+    [Fact]
+    public void WriteReverseTest()
+    {
+        int[] testArray = {9,5,10,17,21,8};
+        int[] desiredOutcome = {8,21,17,10,5,9};
+        Assert.Equal(desiredOutcome, ArrayUtils.WriteReverse(testArray));
+    }
+
+    [Fact]
+    public void ClearTest()
+    {
+        int[] testArray = {9,5,10,17,21,8};
+        int[] desiredOutcome = {9,5,0,0,0,0};
+        Assert.Equal(desiredOutcome, ArrayUtils.Clear(testArray,2,5));
+    }
+
+    [Fact]
+    public void ResizeTest()
+    {
+        int[] testArray = {9,5,10,17,21,8};
+        int[] desiredOutcome = {9,5,10};
+        Assert.Equal(desiredOutcome, ArrayUtils.Resize(testArray,3));
+    }
+
+    [Fact]
+    public void CopyTest()
+    {
+        int[] testArray = {9,5,10,17,21,8};
+        int[] testArray2 = {0,0,0,0,10,9};
+        int[] desiredOutcome = {9,5,10,17,10,9};
+        Assert.Equal(desiredOutcome, ArrayUtils.Copy(testArray,testArray2,4));
     }
 }

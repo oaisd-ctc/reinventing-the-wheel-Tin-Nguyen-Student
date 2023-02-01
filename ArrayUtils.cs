@@ -17,6 +17,13 @@ public class ArrayUtils
        // }
     }
 
+    /// <summary>
+    /// Takes in an array of numbers and then averages them out, returning said average
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to find the collective average of.</param>
+    /// <returns>
+    /// The result of the formula "sum of numbers / total numbers in the array"
+    ///</returns>
     public static double Average(double [] nums)
     {
         double total = 0;
@@ -32,6 +39,13 @@ public class ArrayUtils
         return average;
     }
 
+    /// <summary>
+    /// Takes in an array of numbers and then averages them out
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to input.</param>
+    /// <returns>
+    /// The result of the formula "sum of numbers / total numbers in the array"
+    ///</returns>
     public static int Average(int [] nums)
     {
         int total = 0;
@@ -47,6 +61,13 @@ public class ArrayUtils
         return average;
     }
 ////////////////////////////////////////////
+    /// <summary>
+    /// Takes in an array of numbers and then finds the maximum number.
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to input.</param>
+    /// <returns>
+    /// The maximum number in the array.
+    ///</returns>
     public static int Max(int[] nums)
     {
         int max = nums[0];
@@ -60,6 +81,13 @@ public class ArrayUtils
         return max;
     }
 
+    /// <summary>
+    /// Takes in an array of numbers and then finds the maximum number.
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to input.</param>
+    /// <returns>
+    /// The maximum number in the array.
+    ///</returns>
     public static double Max(double[] nums)
     {
         double max = nums[0];
@@ -73,6 +101,13 @@ public class ArrayUtils
         return max;
     }
 ////////////////////////////////////////////
+    /// <summary>
+    /// Takes in an array of numbers and then finds the minimum number.
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to input.</param>
+    /// <returns>
+    /// The minimum number in the array.
+    ///</returns>
     public static int Min(int[] nums)
     {
         int min = nums[0];
@@ -86,6 +121,13 @@ public class ArrayUtils
         return min;
     }
 
+    /// <summary>
+    /// Takes in an array of numbers and then finds the minimum number.
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to input.</param>
+    /// <returns>
+    /// The minimum number in the array.
+    ///</returns>
     public static double Min(double[] nums)
     {
         double min = nums[0];
@@ -99,6 +141,13 @@ public class ArrayUtils
         return min;
     }
 ////////////////////////////////////////////
+    /// <summary>
+    /// Takes in an array of numbers and then finds the sum.
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to input.</param>
+    /// <returns>
+    /// The sum of the array.
+    ///</returns>
     public static int Sum(int[]nums)
     {
         int sum = 0;
@@ -111,6 +160,19 @@ public class ArrayUtils
         return sum;
     }
 
+    /// <summary>
+    /// Takes in an array of numbers and then finds the sum.
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to input.</param>
+    /// <returns>
+    /// The sum of the array.
+    ///</returns>/// <summary>
+    /// Takes in an array of numbers and then finds the sum.
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to input.</param>
+    /// <returns>
+    /// The sum of the array.
+    ///</returns>
     public static double Sum(double[]nums)
     {
         double sum = 0;
@@ -123,6 +185,13 @@ public class ArrayUtils
         return sum;
     }
 ////////////////////////////////////////////
+    /// <summary>
+    /// Takes in an array of numbers and then finds the product.
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to input.</param>
+    /// <returns>
+    /// The product of the array.
+    ///</returns>
     public static int Product(int[]nums)
     {
         int product = 1;
@@ -135,6 +204,13 @@ public class ArrayUtils
         return product;
     }
 
+    /// <summary>
+    /// Takes in an array of numbers and then finds the product.
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to input.</param>
+    /// <returns>
+    /// The product of the array.
+    ///</returns>
     public static double Product(double[]nums)
     {
         double product = 1;
@@ -147,6 +223,13 @@ public class ArrayUtils
         return product;
     }
 ////////////////////////////////////////////
+    /// <summary>
+    /// Takes in an array of numbers and then sorts the numbers from smallest to greatest.
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to input.</param>
+    /// <returns>
+    /// The sorted ascending array.
+    ///</returns>
     public static int[] SortAscending(int[] nums)
     { 
         int temp;
@@ -167,6 +250,13 @@ public class ArrayUtils
          return nums;
     }
 
+    /// <summary>
+    /// Takes in an array of numbers and then sorts the numbers from smallest to greatest.
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to input.</param>
+    /// <returns>
+    /// The sorted ascending array.
+    ///</returns>
     public static double[] SortAscending(double[] nums)
     { 
         double temp;
@@ -187,6 +277,13 @@ public class ArrayUtils
          return nums;
     }
 ////////////////////////////////////////////
+    /// <summary>
+    /// Takes in an array of numbers and then sorts the numbers from greatest to smallest.
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to input.</param>
+    /// <returns>
+    /// The sorted descending array.
+    ///</returns>
     public static int[] SortDescending(int[] nums)
     { 
         int temp;
@@ -207,6 +304,13 @@ public class ArrayUtils
          return nums;
     }
 
+    /// <summary>
+    /// Takes in an array of numbers and then sorts the numbers from greatest to smallest.
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to input.</param>
+    /// <returns>
+    /// The sorted descending array.
+    ///</returns>
     public static double[] SortDescending(double[] nums)
     { 
         double temp;
@@ -227,6 +331,13 @@ public class ArrayUtils
          return nums;
     }
 ////////////////////////////////////////////
+    /// <summary>
+    /// Takes in an array of numbers and then writes it in reverse.
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to input.</param>
+    /// <returns>
+    /// The reversed array.
+    ///</returns>
     public static int[] WriteReverse(int[] nums)
     {
         int[] reversedArray = new int[nums.Length];
@@ -242,6 +353,13 @@ public class ArrayUtils
         return reversedArray;
     }
 
+    /// <summary>
+    /// Takes in an array of numbers and then writes it in reverse.
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to input.</param>
+    /// <returns>
+    /// The reversed array.
+    ///</returns>
     public static double[] WriteReverse(double[] nums)
     {
         double[] reversedArray = new double[nums.Length];
@@ -257,9 +375,17 @@ public class ArrayUtils
         return reversedArray;
     }
 ////////////////////////////////////////////
-    public static int[] Clear(int[] nums, int index, int length)
+    /// <summary>
+    /// Takes in an array of numbers and then clears a set amount of values.
+    ///</summary>
+    /// <param name="nums"> An array of numbers you want to input.</param>
+    /// <param name="indexStart"> The index of the array (Starts at 0 when counting up from the first number in the array) you want to start clearing from (includes the number it starts at)</param>
+    /// <returns>
+    /// The reversed array.
+    ///</returns>
+    public static int[] Clear(int[] nums, int indexStart, int indexEnd)
     {
-        for (int i = index; i <= length - 1; i++)
+        for (int i = indexStart; i <= indexEnd; i++)
         {
             nums[i] = 0;
         }
@@ -267,9 +393,9 @@ public class ArrayUtils
         return nums;
     }
 
-    public static double[] Clear(double[] nums, int index, int length)
+    public static double[] Clear(double[] nums, int indexStart, int indexEnd)
     {
-        for (int i = index; i <= length - 1; i++)
+        for (int i = indexStart; i <= indexEnd; i++)
         {
             nums[i] = 0;
         }
