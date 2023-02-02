@@ -2,10 +2,10 @@
 namespace Utility
 
 {
-public class Math
+public class MathUtils
 {
 
-        public static void MathUtils(string[] args)
+        public static void Math(string[] args)
         {
         }
         ///<summary>
@@ -23,7 +23,7 @@ public class Math
                 
                 {
                         int power = 1;
-                        for(i = 1; 1 <= y; ++i)
+                        for(int i = 1; 1 <= y; i++)
                         {
                                 power = power * x;
                         }
@@ -65,7 +65,7 @@ public class Math
                 
                 {
                         float power = 1;
-                        for(i = 1; 1 <= y; ++i)
+                        for(int i = 1; 1 <= y; i++)
                         {
                                 power = power * x;
                         }
@@ -84,10 +84,11 @@ public class Math
                         i = i + 1;
                         root = (number / root + root) / 2;
                         if(i == number + 1) {break;}
-                        return root;
+                        
                 }
+                return root;
         }
-        public static float SquareRoot(int x)
+        public static float SquareRoot(float x)
         {
                 int i = 0;
                 float root = 1;
@@ -97,10 +98,11 @@ public class Math
                         i = i + 1;
                         root = (number / root + root) / 2;
                         if(i == number + 1) {break;}
-                        return root;
+                        
                 }
+                return root;
         }
-        public static decimal SquareRoot(int x)
+        public static decimal SquareRoot(decimal x)
          {
                 int i = 0;
                 decimal root = 1;
@@ -109,8 +111,9 @@ public class Math
                         i = i + 1;
                         root = (x / root + root) / 2;
                         if(i == x + 1) {break;}
-                        return root;
+                        
                 }
+                return root;
 
         }
         ///<summary>
@@ -122,7 +125,16 @@ public class Math
         ///</returns>
          public static int AbsoluteValue(int x)
         {
-                return x * ((x>0)) - ((x<0));
+                int absoluteValue = 0;
+                if(x < 0)
+               {
+                absoluteValue = x*-1;
+               }
+               else
+               {
+                absoluteValue= x;
+               }
+                return absoluteValue;
         }
         ///<summary>
         ///Takes the x and when x is greater than 0 it subtracts it by x when it is less than 0 which in turn always makes x a positive
@@ -131,9 +143,18 @@ public class Math
         ///<returns>
         ///Gives a positive number of x
         ///</returns>
-        public static double AbsoluteValue(int x)
+        public static double AbsoluteValue(double x)
         {
-                return x * ((x>0)) - ((x<0));
+                double absoluteValue = 0;
+                if(x < 0)
+               {
+                absoluteValue = x*-1;
+               }
+               else
+               {
+                absoluteValue= x;
+               }
+                return absoluteValue;
         }
         ///<summary>
         ///Takes the x and when x is greater than 0 it subtracts it by x when it is less than 0 which in turn always makes x a positive
@@ -142,9 +163,18 @@ public class Math
         ///<returns>
         ///Gives a positive number of x
         ///</returns>
-        public static float AbsoluteValue(int x)
+        public static float AbsoluteValue(float x)
         {
-                return x * ((x>0)) - ((x<0));
+                float absoluteValue = 0F;
+                if(x < 0)
+               {
+                absoluteValue = x*-1F;
+               }
+               else
+               {
+                absoluteValue= x;
+               }
+                return absoluteValue;
         }
         ///<summary>
         ///Takes both int x and y and outputs the minimum number out of the 2
@@ -155,8 +185,9 @@ public class Math
         ///Returns the minium number between x and y
         ///</returns>
 
-         public static bool Min(float x, float y)
+         public static float Min(float x, float y)
         {
+               
                 {
                         if (x < y)
                         {
@@ -183,7 +214,7 @@ public class Math
         ///<returns>
         ///Returns the minium number between x and y
         ///</returns>
-        public static bool Min(int x, int y)
+        public static int Min(int x, int y)
         {
                 {
                         if (x < y)
@@ -211,7 +242,7 @@ public class Math
         ///<returns>
         ///Returns the minium number between x and y
         ///</returns>
-        public static bool Min(double x, double y)
+        public static double Min(double x, double y)
         {
                 {
                         if (x < y)
@@ -236,7 +267,7 @@ public class Math
         ///<returns>
         ///Returns the maxmimum number between x and y
         ///</returns>
-         public static  bool Max(int x, int y)
+         public static  int Max(int x, int y)
         {
                 if (x > y)
                 {
@@ -259,7 +290,7 @@ public class Math
         ///<returns>
         ///Returns the maxmimum number between x and y
         ///</returns>
-        public static  bool Max(float x, float y)
+        public static  float Max(float x, float y)
         {
                 if (x > y)
                 {
@@ -267,7 +298,7 @@ public class Math
                 }
                 else if (x == y)
                 {
-                        return;
+                        return x;
                 }
                 else 
                 {
@@ -282,7 +313,7 @@ public class Math
         ///<returns>
         ///Returns the maxmimum number between x and y
         ///</returns>
-        public static  bool Max(double x, double y)
+        public static  double Max(double x, double y)
         {
                 if (x > y)
                 {
@@ -290,7 +321,7 @@ public class Math
                 }
                 else if (x == y)
                 {
-                        return;
+                        return x;
                 }
                 else 
                 {
@@ -411,7 +442,7 @@ public class Math
                 
                 {
                         int answer = x / y;
-                        return result;
+                        return answer;
                 }
         }
         ///<summary>
@@ -502,44 +533,24 @@ public class Math
         ///<returns>
         ///Returns the product of x and y
         ///</returns>
-         public static double Log(double x)
+         public static double Percent(double x, double y)
         {
-                double log = 25;
-                while (log => 0)
-                {
-                        double num = (1 << log);
-                        if ((num & x) != 0)
-                        return (double) log;
-                        log --;
+                
+                return x * 100;
 
-                }
-                return -1;
         }
-         public static int Log(int x)
+         public static decimal Percent(decimal x, decimal y)
         {
-                 int log = 25;
-                while (log => 0)
-                {
-                        int num = (1 << log);
-                        if ((num & x) != 0)
-                        return (int) log;
-                        log --;
+                
+                return x * 100;
 
-                }
-                return -1;
         }
-         public static decimal Log(decimal x)
+         public static float Percent(float x, float y)
         {
-                 decimal log = 25M;
-                while (log => 0)
-                {
-                        decimal num = (1M << log);
-                        if ((num & x) != 0)
-                        return (decimal) log;
-                        log --;
+                
+                return x * 100;
 
-                }
-                return -1;
+        }
         }
         ///<summary>
         ///Takes i and when i = 1 and 1 is less than or equal to y, the i will multiply with the y as an exponent
@@ -649,18 +660,17 @@ public class Math
         ///<returns>
         ///Returns the smallest integer of num
         ///</returns>
-        public static float Ceiling(float x)
+        public static float Ceiling(float x , float y)
         {
-                float a = 3;
-                float b = 4; x = 0;
-                if ((a % b) != 0)
+                
+                if ((x % y) != 0)
                 {
-                        x = (a / b) + (a % b);
+                        x = (x / y) + (x % y);
                         return x;
                 }
                 else
                 {
-                        x = (a / b);
+                        x = (x / y);
                         return x;
                 }
         }
