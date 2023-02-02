@@ -4,8 +4,6 @@ using Utility;
 public class Tests
 {
 
-    /// <summary>
-    ///
     [Fact]
     public void AverageTest()
     {
