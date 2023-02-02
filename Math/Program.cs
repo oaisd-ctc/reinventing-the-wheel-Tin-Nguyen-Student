@@ -7,7 +7,7 @@ public class Math
 
         public static void MathUtils(string[] args)
         {
-                
+                Assert.Equal(4, MathUtils.Add(2, 2));
         }
         ///<summary>
         ///Takes a number (x) and then multiplies it by the power (y)
@@ -73,6 +73,8 @@ public class Math
                         return power;
                 }
         }
+        ///<summary>
+        ///Takes 
         public static double SquareRoot(int x)
         {
                 int i = 0;
@@ -110,19 +112,48 @@ public class Math
                 }
 
         }
-        
+        ///<summary>
+        ///Takes the x and when x is greater than 0 it subtracts it by x when it is less than 0 which in turn always makes x a positive
+        ///</summary>
+        ///param name = "x">The Base Number.</param>
+        ///<returns>
+        ///Gives a positive number of x
+        ///</returns>
          public static int AbsoluteValue(int x)
         {
-                return x * ((v>0)) - ((v<0));
+                return x * ((x>0)) - ((x<0));
         }
+        ///<summary>
+        ///Takes the x and when x is greater than 0 it subtracts it by x when it is less than 0 which in turn always makes x a positive
+        ///</summary>
+        ///param name = "x">The Base Number.</param>
+        ///<returns>
+        ///Gives a positive number of x
+        ///</returns>
         public static double AbsoluteValue(int x)
         {
-                return x * ((v>0)) - ((v<0));
+                return x * ((x>0)) - ((x<0));
         }
+        ///<summary>
+        ///Takes the x and when x is greater than 0 it subtracts it by x when it is less than 0 which in turn always makes x a positive
+        ///</summary>
+        ///param name = "x">The Base Number.</param>
+        ///<returns>
+        ///Gives a positive number of x
+        ///</returns>
         public static float AbsoluteValue(int x)
         {
-                return x * ((v>0)) - ((v<0));
+                return x * ((x>0)) - ((x<0));
         }
+        ///<summary>
+        ///Takes both int x and y and outputs the minimum number out of the 2
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the minium number between x and y
+        ///</returns>
+
          public static bool Min(float x, float y)
         {
                 {
@@ -143,6 +174,14 @@ public class Math
                         }
                 }
         }
+        ///<summary>
+        ///Takes both int x and y and outputs the minimum number out of the 2
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the minium number between x and y
+        ///</returns>
         public static bool Min(int x, int y)
         {
                 {
@@ -163,6 +202,14 @@ public class Math
                         }
                 }
         }
+        ///<summary>
+        ///Takes both int x and y and outputs the minimum number out of the 2
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the minium number between x and y
+        ///</returns>
         public static bool Min(double x, double y)
         {
                 {
@@ -180,6 +227,14 @@ public class Math
                         }
                 }
         }
+        ///<summary>
+        ///Takes both int x and y and outputs the maxmimum number out of the 2
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the maxmimum number between x and y
+        ///</returns>
          public static  bool Max(int x, int y)
         {
                 if (x > y)
@@ -195,6 +250,14 @@ public class Math
                         return y;
                 }
         }
+        ///<summary>
+        ///Takes both int x and y and outputs the maxmimum number out of the 2
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the maxmimum number between x and y
+        ///</returns>
         public static  bool Max(float x, float y)
         {
                 if (x > y)
@@ -210,6 +273,14 @@ public class Math
                         return y;
                 }
         }
+        ///<summary>
+        ///Takes both int x and y and outputs the maxmimum number out of the 2
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the maxmimum number between x and y
+        ///</returns>
         public static  bool Max(double x, double y)
         {
                 if (x > y)
@@ -225,6 +296,14 @@ public class Math
                         return y;
                 }
         }
+        ///<summary>
+        ///Takes both int x and y and adds them together 
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the sum of x and y
+        ///</returns>
          public static int Add(int x, int y)
         {
                 
@@ -234,6 +313,14 @@ public class Math
                 }
                 
         }
+        ///<summary>
+        ///Takes both int x and y and adds them together 
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the sum of x and y
+        ///</returns>
          public static double Add(double x, double y)
         {
                 
@@ -243,6 +330,14 @@ public class Math
                 }
                 
         }
+        ///<summary>
+        ///Takes both int x and y and adds them together 
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the sum of x and y
+        ///</returns>
          public static float Add(float x, float y)
         {
                 
@@ -252,7 +347,14 @@ public class Math
                 }
                 
         }
-
+        ///<summary>
+        ///Takes both int x and y and subtracts them together 
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the difference of x and y
+        ///</returns>
          public static int Subtract(int x, int y)
         {
                 
@@ -261,6 +363,14 @@ public class Math
                         return result;
                 }
         }
+         ///<summary>
+        ///Takes both int x and y and subtracts them together 
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the difference of x and y
+        ///</returns>
          public static double Subtract(double x, double y)
         {
                 
@@ -269,6 +379,14 @@ public class Math
                         return result;
                 }
         }
+         ///<summary>
+        ///Takes both int x and y and subtracts them together 
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the difference of x and y
+        ///</returns>
 
          public static float Subtract(float x, float y)
         {
@@ -278,6 +396,14 @@ public class Math
                         return result;
                 }
         }
+         ///<summary>
+        ///Takes both int x and y and divides them together 
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the quotient of x and y
+        ///</returns>
 
          public static int Divide(int x, int y)
         {
@@ -287,6 +413,14 @@ public class Math
                         return result;
                 }
         }
+        ///<summary>
+        ///Takes both int x and y and divides them together 
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the quotient of x and y
+        ///</returns>
          public static double Divide(double x, double y)
         {
                 
@@ -295,6 +429,14 @@ public class Math
                         return result;
                 }
         }
+        ///<summary>
+        ///Takes both int x and y and divides them together 
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the quotient of x and y
+        ///</returns>
          public static float Divide(float x, float y)
         {
                 
@@ -303,7 +445,14 @@ public class Math
                         return result;
                 }
         }
-
+        ///<summary>
+        ///Takes both int x and y and multiplies them together 
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the product of x and y
+        ///</returns>
          public static int Multiply(int x, int y)
         {
                 
@@ -312,6 +461,14 @@ public class Math
                         return result;
                 }
         }
+         ///<summary>
+        ///Takes both int x and y and multiplies them together 
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the product of x and y
+        ///</returns>
          public static double Multiply(double x, double y)
         {
                 
@@ -320,6 +477,14 @@ public class Math
                         return result;
                 }
         }
+         ///<summary>
+        ///Takes both int x and y and multiplies them together 
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the product of x and y
+        ///</returns>
          public static float Multiply(float x, float y)
         {
                 
@@ -328,7 +493,14 @@ public class Math
                         return result;
                 }
         }
-
+         ///<summary>
+        ///Takes x and when log is greater than or equal to 0, 
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns the product of x and y
+        ///</returns>
          public static double Log(double x)
         {
                 double log = 25;
@@ -368,7 +540,14 @@ public class Math
                 }
                 return -1;
         }
-
+        ///<summary>
+        ///Takes i and when i = 1 and 1 is less than or equal to y, the i will multiply with the y as an exponent
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns i after it multiplys by the exponent of y
+        ///</returns>
          public static double Exp(double x, double y)
         {
                 double i =  2.71828;
@@ -379,6 +558,14 @@ public class Math
                 return i;
                 
         }
+        ///<summary>
+        ///Takes i and when i = 1 and 1 is less than or equal to y, the i will multiply with the y as an exponent
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns i after it multiplys by the exponent of y
+        ///</returns>
         public static decimal Exp(decimal x, decimal y)
         {
                 decimal i =  2.71828;
@@ -389,6 +576,14 @@ public class Math
                 return i;
                 
         }
+        ///<summary>
+        ///Takes i and when i = 1 and 1 is less than or equal to y, the i will multiply with the y as an exponent
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<param name = "y">2nd Number.</param>
+        ///<returns>
+        ///Returns i after it multiplys by the exponent of y
+        ///</returns>
         public static float Exp(float x, float y)
         {
                 float i =  2.71828;
@@ -399,6 +594,14 @@ public class Math
                 return i;
                 
         }
+        ///summary
+        ///Takes the a and b to find the smallest integer 
+        ///</summary>
+        ///<param name = "x">1st numner.</param>
+        ///<param name = "y">2nd number.</param>
+        ///<returns>
+        ///Returns the smallest integer of num
+        ///</returns>
          public static double Ceiling(double x, double y)
         {
                 double a = 3;
@@ -414,6 +617,14 @@ public class Math
                         return num;
                 }
         }
+        ///summary
+        ///Takes the a and b to find the smallest integer 
+        ///</summary>
+        ///<param name = "x">1st numner.</param>
+        ///<param name = "y">2nd number.</param>
+        ///<returns>
+        ///Returns the smallest integer of num
+        ///</returns>
         public static decimal Ceiling(decimal x, decimal y)
         {
                 decimal a = 3;
@@ -429,6 +640,14 @@ public class Math
                         return num;
                 }
         }
+        ///summary
+        ///Takes the a and b to find the smallest integer 
+        ///</summary>
+        ///<param name = "x">1st numner.</param>
+        ///<param name = "y">2nd number.</param>
+        ///<returns>
+        ///Returns the smallest integer of num
+        ///</returns>
         public static float Ceiling(float x, float y)
         {
                 float a = 3;
@@ -444,21 +663,39 @@ public class Math
                         return num;
                 }
         }
-
+        ///summary
+        ///Takes the a variable and adds it by .5 to get a whole number
+        ///</summary>
+        ///<param name = "x">1st numner.</param>
+        ///<returns>
+        ///Returns the rounded number
+        ///</returns>
          public static double Round(double x)
         {
                 double a = 2.5;
                 sum = (double) (a + 0.5);
                 return sum;
         }
-        
+        ///summary
+        ///Takes the a variable and adds it by .5 to get a whole number
+        ///</summary>
+        ///<param name = "x">1st numner.</param>
+        ///<returns>
+        ///Returns the rounded number
+        ///</returns>
          public static decimal Round(decimal x)
         {
                 decimal a = 2.5;
                 sum = (decimal) (a + 0.5);
                 return sum;
         }
-        
+        ///summary
+        ///Takes the a variable and adds it by .5 to get a whole number
+        ///</summary>
+        ///<param name = "x">1st numner.</param>
+        ///<returns>
+        ///Returns the rounded number
+        ///</returns>
          public static float Round(float x)
         {
                 float a = 2.5;
