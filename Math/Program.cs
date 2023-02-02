@@ -602,7 +602,7 @@ public class Math
         ///<returns>
         ///Returns the smallest integer of num
         ///</returns>
-         public static double Ceiling(double x, double y)
+         public static double Ceiling(double x)
         {
                 double a = 3;
                 double b = 4; num = 0;
@@ -625,7 +625,7 @@ public class Math
         ///<returns>
         ///Returns the smallest integer of num
         ///</returns>
-        public static decimal Ceiling(decimal x, decimal y)
+        public static decimal Ceiling(decimal x)
         {
                 decimal a = 3;
                 decimal b = 4; num = 0;
@@ -648,7 +648,7 @@ public class Math
         ///<returns>
         ///Returns the smallest integer of num
         ///</returns>
-        public static float Ceiling(float x, float y)
+        public static float Ceiling(float x)
         {
                 float a = 3;
                 float b = 4; num = 0;
