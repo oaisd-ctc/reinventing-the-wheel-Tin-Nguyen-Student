@@ -1,5 +1,5 @@
 ﻿using Xunit;
-using MyUtilities;
+using Utility;
 
 
 public class Tests

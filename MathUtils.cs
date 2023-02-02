@@ -1,5 +1,5 @@
-﻿
-namespace MyUtilities
+﻿using System;
+namespace Utility
 
 {
 public class Math
@@ -7,7 +7,6 @@ public class Math
 
         public static void MathUtils(string[] args)
         {
-                Assert.Equal(4, MathUtils.Add(2, 2));
         }
         ///<summary>
         ///Takes a number (x) and then multiplies it by the power (y)
@@ -45,7 +44,7 @@ public class Math
         
                 {
                         double power = 1;
-                        for(i = 1; 1 <= y; ++i)
+                        for(int i = 1; 1 <= y; ++i)
                         {
                                 power = power * x;
                         }
@@ -78,6 +77,7 @@ public class Math
         public static double SquareRoot(int x)
         {
                 int i = 0;
+                int number = 1;
                 double root = 1;
                 while(true)
                 {
@@ -91,6 +91,7 @@ public class Math
         {
                 int i = 0;
                 float root = 1;
+                int number =1;
                 while(true)
                 {
                         i = i + 1;
@@ -106,8 +107,8 @@ public class Math
                 while(true)
                 {
                         i = i + 1;
-                        root = (number / root + root) / 2;
-                        if(i == number + 1) {break;}
+                        root = (x / root + root) / 2;
+                        if(i == x + 1) {break;}
                         return root;
                 }
 
@@ -243,7 +244,7 @@ public class Math
                 }
                 else if (x == y)
                 {
-                        return;
+                        return x;
                 }
                 else 
                 {
@@ -426,7 +427,7 @@ public class Math
                 
                 {
                         double answer = x / y;
-                        return result;
+                        return answer;
                 }
         }
         ///<summary>
@@ -442,7 +443,7 @@ public class Math
                 
                 {
                         float answer = x / y;
-                        return result;
+                        return answer;
                 }
         }
         ///<summary>
@@ -529,10 +530,10 @@ public class Math
         }
          public static decimal Log(decimal x)
         {
-                 decimal log = 25;
+                 decimal log = 25M;
                 while (log => 0)
                 {
-                        decimal num = (1 << log);
+                        decimal num = (1M << log);
                         if ((num & x) != 0)
                         return (decimal) log;
                         log --;
@@ -568,7 +569,7 @@ public class Math
         ///</returns>
         public static decimal Exp(decimal x, decimal y)
         {
-                decimal i =  2.71828;
+                decimal i =  2.71828M;
                 for(i = 1; 1 <= y; ++i)
                 {
                 i = i * y;
@@ -586,7 +587,7 @@ public class Math
         ///</returns>
         public static float Exp(float x, float y)
         {
-                float i =  2.71828;
+                float i =  2.71828F;
                 for(i = 1; 1 <= y; ++i)
                 {
                 i = i * y;
@@ -605,16 +606,16 @@ public class Math
          public static double Ceiling(double x)
         {
                 double a = 3;
-                double b = 4; num = 0;
+                double b = 4; x = 0;
                 if ((a % b) != 0)
                 {
-                        num = (a / b) + (a % b);
-                        return num;
+                        x = (a / b) + (a % b);
+                        return x;
                 }
                 else
                 {
-                        num = (a / b);
-                        return num;
+                        x = (a / b);
+                        return x;
                 }
         }
         ///summary
@@ -628,16 +629,16 @@ public class Math
         public static decimal Ceiling(decimal x)
         {
                 decimal a = 3;
-                decimal b = 4; num = 0;
+                decimal b = 4; x = 0;
                 if ((a % b) != 0)
                 {
-                        num = (a / b) + (a % b);
-                        return num;
+                        x = (a / b) + (a % b);
+                        return x;
                 }
                 else
                 {
-                        num = (a / b);
-                        return num;
+                        x = (a / b);
+                        return x;
                 }
         }
         ///summary
@@ -651,16 +652,16 @@ public class Math
         public static float Ceiling(float x)
         {
                 float a = 3;
-                float b = 4; num = 0;
+                float b = 4; x = 0;
                 if ((a % b) != 0)
                 {
-                        num = (a / b) + (a % b);
-                        return num;
+                        x = (a / b) + (a % b);
+                        return x;
                 }
                 else
                 {
-                        num = (a / b);
-                        return num;
+                        x = (a / b);
+                        return x;
                 }
         }
         ///summary
@@ -673,8 +674,8 @@ public class Math
          public static double Round(double x)
         {
                 double a = 2.5;
-                sum = (double) (a + 0.5);
-                return sum;
+                x = (double) (a + 0.5);
+                return x;
         }
         ///summary
         ///Takes the a variable and adds it by .5 to get a whole number
@@ -685,9 +686,9 @@ public class Math
         ///</returns>
          public static decimal Round(decimal x)
         {
-                decimal a = 2.5;
-                sum = (decimal) (a + 0.5);
-                return sum;
+                decimal a = 2.5M;
+                x = (decimal) (a + 0.5M);
+                return x;
         }
         ///summary
         ///Takes the a variable and adds it by .5 to get a whole number
@@ -698,9 +699,9 @@ public class Math
         ///</returns>
          public static float Round(float x)
         {
-                float a = 2.5;
-                sum = (float) (a + 0.5);
-                return sum;
+                float a = 2.5F;
+                x = (float) (a + 0.5F);
+                return x;
         }
     }
 }
