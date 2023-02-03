@@ -16,9 +16,9 @@ namespace Utility
     }
 
     public void LengthTest() {
-        string length = "thisislengthyintentionally";
+        int test = 5;
         string testing = "build";
-        Assert.Equal(length, StringUtils.Length(testing));
+        Assert.Equal(test, StringUtils.Length(testing));
     }
 
     public void ReverseTest() {
@@ -28,15 +28,15 @@ namespace Utility
     }
 
     public void CountVowels() {
-        string countvowels = "aeiou however";
+        int test = 2;
         string testing = "build";
-        Assert.Equal(countvowels, StringUtils.CountVowels(testing));
+        Assert.Equal(test, StringUtils.CountVowels(testing));
     }
 
     public void CountConsonants() {
-        string countconsonants = "i forgot how this one worjs";
+        int test = 3;
         string testing = "build";
-        Assert.Equal(countconsonants, StringUtils.CountConsonants(testing));
+        Assert.Equal(test, StringUtils.CountConsonants(testing));
     }
 
     public void HasLetter() {
@@ -46,15 +46,14 @@ namespace Utility
     }
 
     public void IsNullOrEmpty() {
-        string isnullorempty = "this is null or empty";
-        string testing = "build";
-        Assert.Equal(isnullorempty, StringUtils.HasLetter(testing));
+        string testing = "";
+        Assert.Equal(true, StringUtils.IsNullOrEmpty(testing));
     }
 
     public void EndsWith() {
-        string endswith = "this ends with";
+        char test = 'a';
         string testing = "build";
-        Assert.Equal(endswith, StringUtils.HasLetter(testing));
+        Assert.Equal(false, StringUtils.EndsWith(test,testing));
     }
 
     public void Contains() {
