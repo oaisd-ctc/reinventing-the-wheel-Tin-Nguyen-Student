@@ -53,9 +53,9 @@ public class Tests
         Assert.Equal(6, MathUtils.Multiply(3, 2));
     }
     [Fact]
-    public void LogTest()
+    public void PercentTest()
     {
-        Assert.Equal(0.69897000433, MathUtils.Log(5));
+        Assert.Equal(5, MathUtils.Percent(.05));
     }
     [Fact]
     public void ExponentTest()

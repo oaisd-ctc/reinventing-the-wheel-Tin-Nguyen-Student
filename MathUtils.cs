@@ -526,29 +526,42 @@ public class MathUtils
                 }
         }
          ///<summary>
-        ///Takes x and when log is greater than or equal to 0, 
+        ///Takes x and multiplies the decimal/float/double of x by 100, 
         ///</summary>
         ///<param name = "x">1st Number.</param>
-        ///<param name = "y">2nd Number.</param>
         ///<returns>
-        ///Returns the product of x and y
+        ///Returns the whole number of a decimal to a whole number percentage
         ///</returns>
-         public static double Percent(double x, double y)
+         public static double Percent(double x)
         {
                 
                 return x * 100;
 
         }
-         public static decimal Percent(decimal x, decimal y)
+         ///<summary>
+        ///Takes x and multiplies the decimal/float/double of x by 100, 
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<returns>
+        ///Returns the whole number of a decimal to a whole number percentage
+        ///</returns>
+         public static decimal Percent(decimal x)
         {
                 
-                return x * 100;
+                return x * 100M;
 
         }
-         public static float Percent(float x, float y)
+         ///<summary>
+        ///Takes x and multiplies the decimal/float/double of x by 100, 
+        ///</summary>
+        ///<param name = "x">1st Number.</param>
+        ///<returns>
+        ///Returns the whole number of a decimal to a whole number percentage
+        ///</returns>
+         public static float Percent(float x)
         {
                 
-                return x * 100;
+                return x * 100F;
 
         }
         }
@@ -560,6 +573,7 @@ public class MathUtils
         ///<returns>
         ///Returns i after it multiplys by the exponent of y
         ///</returns>
+
          public static double Exp(double x, double y)
         {
                 double i =  2.71828;
@@ -568,8 +582,8 @@ public class MathUtils
                 i = i * y;
                 }
                 return i;
-                
         }
+
         ///<summary>
         ///Takes i and when i = 1 and 1 is less than or equal to y, the i will multiply with the y as an exponent
         ///</summary>
@@ -578,6 +592,7 @@ public class MathUtils
         ///<returns>
         ///Returns i after it multiplys by the exponent of y
         ///</returns>
+        
         public static decimal Exp(decimal x, decimal y)
         {
                 decimal i =  2.71828M;
@@ -637,20 +652,21 @@ public class MathUtils
         ///<returns>
         ///Returns the smallest integer of num
         ///</returns>
-        public static decimal Ceiling(decimal x)
+        public static decimal Ceiling(decimal x, decimal y)
         {
-                decimal a = 3;
-                decimal b = 4; x = 0;
-                if ((a % b) != 0)
+                decimal total = 1M;
+                if ((x % y) != 0M)
                 {
-                        x = (a / b) + (a % b);
-                        return x;
+                        total = (x / y) + (x % y);
+                        return total;
                 }
+                
                 else
                 {
-                        x = (a / b);
-                        return x;
+                        total = (x / y);
+                        
                 }
+                return x;
         }
         ///summary
         ///Takes the a and b to find the smallest integer 
@@ -687,6 +703,7 @@ public class MathUtils
                 x = (double) (a + 0.5);
                 return x;
         }
+                
         ///summary
         ///Takes the a variable and adds it by .5 to get a whole number
         ///</summary>
@@ -711,7 +728,7 @@ public class MathUtils
         {
                 float a = 2.5F;
                 x = (float) (a + 0.5F);
-                return x;
+                
         }
     }
-}
+
