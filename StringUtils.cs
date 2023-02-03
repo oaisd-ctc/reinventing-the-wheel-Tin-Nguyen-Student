@@ -159,5 +159,58 @@ public class StringUtils
             return false;
         }
     }
+    public static bool IsNullOrEmpty(string str)
+        {
+            if (str == null)
+            {
+                return true;
+            }
+            else if (str == "")
+            {
+                return true;
+            }
+            else if (str == " ")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool EndsWith(char value, string str)
+        {
+            char s = str[str.Length - 1];
+
+            if (s == value)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool Contains(char value, string str)
+        {
+            int i = 0;
+           
+            while(i == str.Length - 1)
+            {
+                if (value != str[i])
+                {
+                    i++;
+                    return false;
+                }
+                else
+                {
+                   return true;
+                }
+            }
+        }
 }
 }
+
+    
