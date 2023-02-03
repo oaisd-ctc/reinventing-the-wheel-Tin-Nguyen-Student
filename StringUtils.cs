@@ -12,6 +12,9 @@ public class StringUtils
     /// This method will take in 1 string as a parameter and return a string in the argument's uppercase form.
     /// <param name="s"> The string you want to turn uppercase</param>
     /// </summary>
+    ///<returns>
+    /// outputs all lowercase letters to uppercase
+    ///</returns>
     public static string ToUpper(string s)
     {
         String answer ="";
@@ -33,6 +36,9 @@ public class StringUtils
     /// This method will take in 1 string as a parameter and return a string in the arguments lowercase form.
     /// <param name="s"> The string you want to turn lowercase</param>
     /// </summary>
+    /// <returns>
+    /// the lowercase of all capital letters
+    /// </returns>
     public static string ToLower(string s)
     {
         String answer ="";
@@ -54,6 +60,9 @@ public class StringUtils
     /// This method will take in 1 string as a parameter and return a number that represents the amount of characters in the string parameter
     /// <param name="L"> The string you want to tell you the length of your input</param>
     /// </summary>
+    /// <returns>
+    ///The number of amount of characters within the string
+    ///</returns>
     public static int Length(string L)
     {
         int incomingStringLength = 0;
@@ -63,9 +72,12 @@ public class StringUtils
         return incomingStringLength;
     }
     /// <summary>
-    /// This method will take in 1 string as a parameter and return a string in the argument's uppercase form.
+    /// This method will take in a string and reverse the order of the strings
     /// <param name="s"> The string you want to turn uppercase</param>
     /// </summary>
+    /// <returns>
+    ///The string in reverse order
+    ///</returns>
     public static string Reverse(string s)
     {
         char[] stringArray = s.ToCharArray();
@@ -77,9 +89,12 @@ public class StringUtils
         return reverse;
     }
     /// <summary>
-    /// This method will take in 1 string as a parameter and return a string in the argument's uppercase form.
+    /// This method will take in a string and count all of the vowels from the string
     /// <param name="s"> The string you want to turn uppercase</param>
     /// </summary>
+    ///<returns>
+    ///Will output the number of vowels within the string
+    ///</returns>
     public static int CountVowels(string s)
     {
         int i           = 0;
@@ -95,9 +110,12 @@ public class StringUtils
     }
     
     /// <summary>
-    /// This method will take in 1 string as a parameter and return a string in the argument's uppercase form.
+    /// This method will take in 1 string and it will output the number of consonants in the string
     /// <param name="s"> The string you want to turn uppercase</param>
     /// </summary>
+    ///<returns>
+    ///Will output the number of consonants in the string
+    ///</returns>
     public static int CountConsonants(string s)
     {
         int i = 0;
@@ -129,9 +147,12 @@ public class StringUtils
 
     }
     /// <summary>
-    /// This method will take in 1 string as a parameter and return a string in the argument's uppercase form.
+    /// This method will take in 1 string and if it has a letter it will output it
     /// <param name="s"> The string you want to turn uppercase</param>
     /// </summary>
+    ///<returns>
+    ///The letter within the string 
+    ///</returns>
     public static bool HasLetter(string s, string g)
     {
         int p = s.Length;
@@ -211,6 +232,7 @@ public class StringUtils
             }
         }
 }
+
 }
 
     
