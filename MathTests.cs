@@ -58,9 +58,9 @@ public class Tests
         Assert.Equal(5, MathUtils.Percent(.05));
     }
     [Fact]
-    public void ExponentTest()
+    public void ExponentialTest()
     {
-        Assert.Equal(8, MathUtils.Exp(2, 3));
+        Assert.Equal(5.7899364, MathUtils.Exp(2.13));
     }
     [Fact]
     public void CeilingTest()
@@ -70,7 +70,7 @@ public class Tests
     [Fact]
     public void RoundTest()
     {
-        Assert.Equal(3, MathUtils.Round(2.5, .5));
+        Assert.Equal(3, MathUtils.Round(2.5));
     }
 }
 }

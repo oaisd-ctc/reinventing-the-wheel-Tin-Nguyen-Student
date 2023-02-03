@@ -564,7 +564,7 @@ public class MathUtils
                 return x * 100F;
 
         }
-        }
+        
         ///<summary>
         ///Takes i and when i = 1 and 1 is less than or equal to y, the i will multiply with the y as an exponent
         ///</summary>
@@ -574,12 +574,12 @@ public class MathUtils
         ///Returns i after it multiplys by the exponent of y
         ///</returns>
 
-         public static double Exp(double x, double y)
+         public static double Exp(double x)
         {
                 double i =  2.71828;
-                for(i = 1; 1 <= y; ++i)
+                for(i = 1; 1 <= x; ++i)
                 {
-                i = i * y;
+                i = i * x;
                 }
                 return i;
         }
@@ -593,12 +593,12 @@ public class MathUtils
         ///Returns i after it multiplys by the exponent of y
         ///</returns>
         
-        public static decimal Exp(decimal x, decimal y)
+        public static decimal Exp(decimal x)
         {
                 decimal i =  2.71828M;
-                for(i = 1; 1 <= y; ++i)
+                for(i = 1; 1 <= x; ++i)
                 {
-                i = i * y;
+                i = i * x;
                 }
                 return i;
                 
@@ -611,12 +611,12 @@ public class MathUtils
         ///<returns>
         ///Returns i after it multiplys by the exponent of y
         ///</returns>
-        public static float Exp(float x, float y)
+        public static float Exp(float x)
         {
                 float i =  2.71828F;
-                for(i = 1; 1 <= y; ++i)
+                for(i = 1; 1 <= x; ++i)
                 {
-                i = i * y;
+                i = i * x;
                 }
                 return i;
                 
@@ -728,7 +728,8 @@ public class MathUtils
         {
                 float a = 2.5F;
                 x = (float) (a + 0.5F);
-                
+                return x;
         }
     }
+}
 
