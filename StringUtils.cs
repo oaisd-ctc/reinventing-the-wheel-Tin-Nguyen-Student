@@ -214,23 +214,6 @@ public class StringUtils
             }
         }
 
-        public static bool Contains(char value, string str)
-        {
-            int i = 0;
-           
-            while(i == str.Length - 1)
-            {
-                if (value != str[i])
-                {
-                    i++;
-                    return false;
-                }
-                else
-                {
-                   return true;
-                }
-            }
-        }
 }
 
 }

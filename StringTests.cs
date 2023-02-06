@@ -55,11 +55,5 @@ namespace Utility
         string testing = "build";
         Assert.Equal(false, StringUtils.EndsWith(test,testing));
     }
-
-    public void Contains() {
-        string contains = "this contains";
-        string testing = "build";
-        Assert.Equal(false, StringUtils.HasLetter(testing,contains));
-    }
     }
  }

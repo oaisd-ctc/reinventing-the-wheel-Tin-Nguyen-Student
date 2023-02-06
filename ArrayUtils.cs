@@ -4,10 +4,7 @@ namespace Utility
 {
 public class ArrayUtils
 {
-    static void Main(string[] args)
-    {
-       
-    }
+
 
     /// <summary>
     /// Takes in an array of numbers and then averages them out
@@ -15,7 +12,7 @@ public class ArrayUtils
     /// <param name="nums"> An array of numbers you want to find the collective average of.</param>
     /// <returns>
     /// The result of the formula "sum of numbers / total numbers in the array"
-    ///</returns>
+    /// </returns>
     public static double Average(double [] nums)
     {
         double total = 0;
