@@ -41,8 +41,8 @@ namespace Utility
 
     public void HasLetter() {
         string hasletter = "this has letters";
-        string testing = "build";
-        Assert.Equal(hasletter, StringUtils.HasLetter(testing));
+        string testing = "a";
+        Assert.Equal(true, StringUtils.HasLetter(testing,hasletter));
     }
 
     public void IsNullOrEmpty() {
@@ -59,7 +59,7 @@ namespace Utility
     public void Contains() {
         string contains = "this contains";
         string testing = "build";
-        Assert.Equal(contains, StringUtils.HasLetter(testing));
+        Assert.Equal(false, StringUtils.HasLetter(testing,contains));
     }
     }
  }
